@@ -1,5 +1,6 @@
 import pandas as pd
 import yfinance as yf
+import matplotlib.pyplot as plt
 
 nasdaq = yf.download('^IXIC', start='2020-01-01', end='2025-01-01')
 nasdaq.head()
@@ -10,3 +11,4 @@ plt.title('NASDAQ Index (2020-2025)')
 plt.xlabel('Date')
 plt.ylabel('Price')
 plt.show()
+print("test actuel")
